@@ -1,0 +1,14 @@
+Wed Nov 18 09:01:13 PST 1998 <bzajac@geocities.com> Blair Zajac
+	Change name of interval to interval_search.
+
+	Change "return;" of interval_search to "return -1;" when an
+	empty array is passed in.
+
+	Spell check the documentation.
+
+	Version 1.00.
+	
+Wed Aug  5 13:58:40 PDT 1998 <blair@geocities.com> Blair Zajac
+
+	Version 0.01.
+	First version copied from the Borp source tree.
