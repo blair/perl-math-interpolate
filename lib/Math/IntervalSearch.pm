@@ -7,7 +7,7 @@ use vars qw(@ISA $VERSION @EXPORT_OK);
 use Exporter;
 use Carp qw(cluck);
 
-$VERSION   = do {my @r=(q$Revision: 1.00 $=~/\d+/g);sprintf "%d."."%02d"x$#r,@r};
+$VERSION   = do {my @r=(q$Revision: 1.01 $=~/\d+/g);sprintf "%d."."%02d"x$#r,@r};
 @ISA       = qw(Exporter);
 @EXPORT_OK = qw(interval_search);
 
@@ -164,6 +164,20 @@ Math::IntervalSearch - Search where an element lies in a list of sorted elements
  my @array = (1..5);
  my $location = interval(2.4, \@array);
 
+ # Use your own comparison operators.
+ sub ReverseLessThan {
+   $_[0] < $_[1];
+ }
+
+ sub ReverseLessThanEqualTo {
+   $_[0] <= $_[1];
+ }
+
+ $location = interval(2.4,
+                     \@array,
+                     \&ReverseLessThan,
+                     \&ReverseLessThanEqualTo);
+
 =head1 DESCRIPTION
 
 This subroutine is used to locate a position in an array of values where a
@@ -227,7 +241,7 @@ Then left = ilo is returned.
 
 =head1 AUTHOR
 
-Blair Zajac <bzajac@geocities.com>
+Blair Zajac <bzajac@geostaff.com>.
 
 =head1 COPYRIGHT
 

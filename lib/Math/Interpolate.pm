@@ -8,7 +8,7 @@ use Exporter;
 use Carp qw(cluck);
 use Math::IntervalSearch qw(interval_search);
 
-$VERSION   = do {my @r=(q$Revision: 1.00 $=~/\d+/g);sprintf "%d."."%02d"x$#r,@r};
+$VERSION   = do {my @r=(q$Revision: 1.01 $=~/\d+/g);sprintf "%d."."%02d"x$#r,@r};
 @ISA       = qw(Exporter);
 @EXPORT_OK = qw(derivatives constant_interpolate
 		linear_interpolate robust_interpolate);
@@ -354,7 +354,7 @@ in a void context.
 
 =head1 AUTHOR
 
-Blair Zajac <bzajac@geocities.com>
+Blair Zajac <bzajac@geostaff.com>.
 
 =head1 COPYRIGHT
 
