@@ -1,3 +1,12 @@
+Tue Aug 17 11:42:49 PDT 1999
+
+	Release 1.04.
+
+Tue Aug 17 11:42:26 PDT 1999
+
+	Add one more test to check if a properly sorted array can be
+	created using interval_search.
+
 Tue Aug 17 11:12:12 PDT 1999
 
 	Release 1.03.

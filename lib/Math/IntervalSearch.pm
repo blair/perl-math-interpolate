@@ -9,7 +9,7 @@ use Carp qw(cluck);
 
 @EXPORT_OK = qw(interval_search);
 @ISA       = qw(Exporter);
-$VERSION   = substr q$Revision: 1.03 $, 10;
+$VERSION   = substr q$Revision: 1.04 $, 10;
 
 sub LessThan {
   $_[0] < $_[1];
