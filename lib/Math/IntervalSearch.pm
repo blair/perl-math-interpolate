@@ -7,7 +7,7 @@ use vars qw(@ISA $VERSION @EXPORT_OK);
 use Exporter;
 use Carp qw(cluck);
 
-$VERSION   = do {my @r=(q$Revision: 1.01 $=~/\d+/g);sprintf "%d."."%02d"x$#r,@r};
+$VERSION   = do {my @r=(q$Revision: 1.02 $=~/\d+/g);sprintf "%d."."%02d"x$#r,@r};
 @ISA       = qw(Exporter);
 @EXPORT_OK = qw(interval_search);
 

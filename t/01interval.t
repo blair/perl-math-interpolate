@@ -14,9 +14,11 @@ END   {print "not ok 1\n" unless $loaded; }
 
 my $ok_count = 1;
 sub ok {
-  shift or print "not ";
+  my $ok = shift;
+  $ok or print "not ";
   print "ok $ok_count\n";
   ++$ok_count;
+  $ok;
 }
 
 use Math::IntervalSearch qw(interval_search);
