@@ -1,17 +1,16 @@
 package Math::Interpolate;
 
-require 5.004_04;
+require 5.004_01;
 
 use strict;
 use Exporter;
-use Carp qw(cluck);
 use Math::IntervalSearch qw(interval_search);
 use vars qw(@EXPORT_OK @ISA $VERSION);
 
 @EXPORT_OK = qw(derivatives constant_interpolate
 		linear_interpolate robust_interpolate);
 @ISA       = qw(Exporter);
-$VERSION   = substr q$Revision: 1.04 $, 10;
+$VERSION   = substr q$Revision: 1.05 $, 10;
 
 sub derivatives {
   my $X = shift;

@@ -1,15 +1,17 @@
 package Math::IntervalSearch;
 
-require 5.004_04;
+require 5.004_01;
 
 use strict;
 use vars qw(@EXPORT_OK @ISA $VERSION);
 use Exporter;
-use Carp qw(cluck);
+use Carp;
 
 @EXPORT_OK = qw(interval_search);
 @ISA       = qw(Exporter);
-$VERSION   = substr q$Revision: 1.04 $, 10;
+$VERSION   = substr q$Revision: 1.05 $, 10;
+
+sub cluck { warn Carp::longmess @_ }
 
 sub LessThan {
   $_[0] < $_[1];
