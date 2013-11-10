@@ -13,3 +13,11 @@ WriteMakefile(
   'MIN_PERL_VERSION'	=> '5.004_01',
   'VERSION_FROM'	=> 'lib/Math/Interpolate.pm', # finds $VERSION
 );
+
+sub MY::postamble {
+  return <<'POSTAMBLE';
+
+mydist: distmeta distsignature tardist
+
+POSTAMBLE
+}
