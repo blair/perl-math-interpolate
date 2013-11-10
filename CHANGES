@@ -1,3 +1,26 @@
+See the GitHub repository for a list of individual changes. [1] As of
+the 1.06 release this document only lists high level changes.
+
+[1] https://github.com/blair/perl-math-interpolate/commits/master
+
+Sun Nov 10 15:39:39 PST 2013
+
+	Release 1.06.
+
+	New 'mydist' Makefile target to sign and build a tarball.
+
+	Pass ABSTRACT, AUTHOR, LICENSE and MIN_PERL_VERSION to
+	ExtUtils::MakeMaker::WriteMakefile().
+
+	Correctly set $VERSION that doesn't trigger warnings:
+	https://rt.cpan.org/Ticket/Display.html?id=89020
+
+	Update documentation to include the URL to the project's new
+	source code repository at github.com:
+	https://github.com/blair/perl-math-interpolate
+
+	Update author contact email address.
+
 Tue Aug 24 11:28:45 PDT 1999
 
 	Release 1.05.
