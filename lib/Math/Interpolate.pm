@@ -10,7 +10,8 @@ use vars qw(@EXPORT_OK @ISA $VERSION);
 @EXPORT_OK = qw(derivatives constant_interpolate
 		linear_interpolate robust_interpolate);
 @ISA       = qw(Exporter);
-$VERSION   = substr q$Revision: 1.05 $, 10;
+$VERSION   = '1.06';
+$VERSION   = eval $VERSION;
 
 sub derivatives {
   my $X = shift;

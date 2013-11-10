@@ -9,7 +9,8 @@ use Carp;
 
 @EXPORT_OK = qw(interval_search);
 @ISA       = qw(Exporter);
-$VERSION   = substr q$Revision: 1.05 $, 10;
+$VERSION   = 1.06;
+$VERSION   = eval $VERSION;
 
 sub cluck { warn Carp::longmess @_ }
 
